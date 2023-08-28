@@ -1,0 +1,158 @@
+.leftMenu{
+    width: 280px;
+    height: 100%;
+    min-height: 100vh;
+    background: rgba(34,34,34,0.6);
+    backdrop-filter: blur(10px);
+    padding: 20px 15px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.leftMenu .logoContainer{
+    color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.leftMenu .logoContainer i{
+    font-size: 30px;
+}
+
+.leftMenu .logoContainer i:nth-child(3){
+    font-size: 20px;
+}
+
+.leftMenu .logoContainer h2{
+    font-size: 20px;
+}
+
+.searchBox{
+    width: 100%;
+    height: 45px;
+    position: relative;
+    margin-top: 20px;
+    color: rgb(136, 136, 136);
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.4);
+}
+
+.searchBox input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    background: rgba(0,0,0,0.5);
+    padding-left:45px ;
+    color: #f1f1f1;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+.searchBox .searchIcon{
+   position: absolute ;
+   color: #f1f1f1;
+   top: 0;
+   left: 0;
+   width: 45px;
+   text-align: center;
+   line-height: 45px;
+   font-size: 15px;
+
+}
+
+
+.MenuContainer{
+    margin: 15px 0;
+}
+
+.MenuContainer .title
+{
+    color: #848484;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.MenuContainer ul{
+   width: 100%;
+   padding: 0;
+}
+
+.MenuContainer ul li{
+    list-style: none;   
+    margin: 5px 0;  
+    width: 100%;
+    padding: 5px 0;
+    position: relative;
+}
+ 
+.MenuContainer ul li a{
+    text-decoration: none; 
+    color: #8f8f8f;  
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.MenuContainer ul li a i{
+    font-size: 18px;
+    margin-right: 15px;
+}
+ 
+.MenuContainer ul li:before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -10px;
+    width: 0px;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.MenuContainer ul li:hover::before,
+.MenuContainer ul li.active::before{
+    width: 100%;
+    background: #797373;
+    opacity: 0.2;
+    transition: 0.3s ;
+}
+ 
+.MenuContainer ul li:hover a,
+.MenuContainer ul li.active a
+{
+    color: #f1f1f1;
+    transition: 0.3s;
+}
+
+
+.playListContainer{
+    cursor: pointer;
+    margin: 15px 0;
+}
+
+.playListContainer .nameContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:#848484 ;
+    margin-bottom: 10px;
+}
+
+.playListContainer .nameContainer p{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.playListContainer .nameContainer i{
+   cursor: pointer;
+   color: #f1f1f1;
+}
+
+
